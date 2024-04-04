@@ -50,7 +50,7 @@ export default function Features() {
         id="servicios"
             className='mx-auto w-full sm:max-w-2xl sm:mt-[18rem]'
         >
-            <h1 className=' text-center text-2xl mt-5 sm:mt-0 sm:text-3xl'>Servicios</h1>
+            <h1 className=' text-center text-2xl mt-5 sm:mt-0 sm:text-3xl'>Features</h1>
             {servicios.map((item, index) =>
                 <Feature key={item.title} item={item} index={index} />
             )}
