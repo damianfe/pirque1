@@ -2,6 +2,7 @@
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+
 type IHeaderItemProps = {
     name: string;
     hash: string;
@@ -28,7 +29,7 @@ const {activeSection, setActiveSection} = useActiveSectionContext()
         >
             <Link
                 className={`
-                ${ id === activeSection ? "text-gray-950":""} flex w-full transition-all items-center justify-center px-3 py-3 hover:text-gray-950`}
+                ${ id === activeSection ? "text-green-200":""} flex w-full transition-all items-center justify-center px-3 py-3 hover:text-green-900`}
                 href={""}
                 onClick={(e) => {
                     e.preventDefault()
@@ -38,7 +39,7 @@ const {activeSection, setActiveSection} = useActiveSectionContext()
             >
                 {name}
                 { id === activeSection && (
-                    <motion.span className='bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-400'
+                    <motion.span className='bg-gray-500 rounded-full absolute inset-0 -z-10 dark:bg-gray-400'
                     layoutId='activeSection'
                     ></motion.span>
                 )

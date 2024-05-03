@@ -1,6 +1,6 @@
 export const links = [
     {
-        id:"incio",
+        id:"inicio",
         name:"Inicio",
         hash:  "#inicio"
     },
@@ -46,7 +46,7 @@ export  const servicios =[
         alt:"icon money"
     },
     {
-        title:" eventos y alquiler vacacional",
+        title:" Eventos y Alquiler vacacional",
         description: "Además de ser una residencia familiar, nuestra propiedad tiene un gran potencial para eventos o alquiler vacacional. Con un amplio terreno y excelentes instalaciones, podrás generar ingresos adicionales alquilando la propiedad para bodas, celebraciones u otras actividades.",
         imagePath:"/evento.png",
         alt:"icon communities"
@@ -76,11 +76,4 @@ export const socialMedia = [
         icon:'/instagram.png',
         alt:'instagram logo',
     },
-    {
-        id:4,
-        link: 'https://www.threads.net/',
-        icon:'/threads.png',
-        alt:'threads logo',
-    },
-
 ]

@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-gray-50`}>
+      <body className={`${montserrat.className} bg-sky-200`}>
         <ActiveSectionContextProvider>
         {children}
         <Toaster position="top-right" />
