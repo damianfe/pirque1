@@ -1,5 +1,6 @@
 "use client"
 
+import Contact from "@/components/contact"
 import Features from "@/components/features"
 import Footer from "@/components/footer"
 import Header from "@/components/header"
@@ -11,6 +12,7 @@ export default function Home() {
     <Header/>
     <Intro/>
     <Features/>
+    <Contact/>
     <Footer/>
     </main>
     )

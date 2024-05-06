@@ -10,7 +10,7 @@ export default function Intro() {
     // Define las propiedades de tu animación aquí
   };
   const { elementRef } = useIntersection("intro", animacion)
-  
+
   return (
     <section ref={elementRef} id="inicio" className='mx-auto max-w-6xl mt-24 sm:mb-[15rem]'>
       <div className='flex flex-row justify-between items-center mx-5 mb-5 bg-white-500'>
@@ -27,7 +27,18 @@ export default function Intro() {
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className='bg-sky-200 cursor-pointer hover:bg-green-200 active:bg-purple-50 focus:bg-purple-50 border text-[0.9rem] sm:text-[1rem] border-blue-950 rounded-lg w-[6.3rem] h-[2.1rem] sm:w-[8.1rem] sm:h-[2.5rem]'>
+          className='bg-sky-200 cursor-pointer hover:bg-green-200 active:bg-purple-50 focus:bg-purple-50 border text-[0.9rem] sm:text-[1rem] border-blue-950 rounded-lg w-[6.3rem] h-[2.1rem] sm:w-[8.1rem] sm:h-[2.5rem]'
+          onClick={() => {
+            // Reemplaza 'tu_numero' con el número de teléfono al que quieres enviar el mensaje por WhatsApp
+            const phoneNumber = '+56949784021';
+            // Reemplaza 'mensaje' con el mensaje que quieres enviar, si lo deseas
+            const message = encodeURIComponent('Hola, me gustaría hacer una reserva.');
+            // URL del enlace web de WhatsApp con el número de teléfono y, opcionalmente, el mensaje
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+            // Abre el enlace en una nueva pestaña
+            window.open(whatsappURL, '_blank');
+          }}
+        >
           Reservar
         </motion.button>
       </div>
@@ -52,7 +63,7 @@ export default function Intro() {
             animate={{ opacity: 1 }}
             className='flex mt-5 gap-5 flex-col xl:flex-row mx-auto sm:mx-0'
           >
-            
+
           </motion.div>
         </div>
 
